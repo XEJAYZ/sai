@@ -63,7 +63,7 @@
 
   <!-- หน้าที่สอง -->
   <div id="page2" class="hidden">
-    <h1>💘 เป็นแฟนกับเจได้ไหมครับ<br>เจอยู่โดยไม่มีทรายไม่ได้เลย 🥺</h1>
+    <h1>💘 เป็นแฟนกับเจได้ไหมครับ<br>ชั้นมีความสุขมากๆที่ได้ใช้เวลากับแก  🥺</h1>
     <div class="buttons">
       <button class="yes" id="yesButton">Yes 💗</button>
       <button class="no" id="noButton">No 😢</button>
