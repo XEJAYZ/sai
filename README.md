@@ -57,13 +57,20 @@
 <body>
   <!-- หน้าแรก -->
   <div id="page1">
-    <h1>🎉 เราครบ 1 เดือนแล้วนะ 💕<br>ชั้นมีเรื่องอยากจะขอจริงๆ สักทีนะคะ 😊</h1>
+    <h1>🎉 เราครบ 1 เดือนแล้วนะคะทราย 💕<br>ชั้นมีเรื่องอยากจะขอจริงๆ สักทีนะ 🥺 </h1>
     <button class="next" id="nextButton">ต่อเลยนะคะ 💌</button>
   </div>
 
-  <!-- หน้าที่สอง -->
+  <!-- หน้าที่สอง (ข้อความที่คุณจะเขียนเอง) -->
   <div id="page2" class="hidden">
-    <h1>💘 เป็นแฟนกับเจได้ไหมครับ<br>ชั้นมีความสุขมากๆที่ได้ใช้เวลากับแก  🥺</h1>
+    <h1>📝  ทุกครั้งที่เบบี๋เป็นตัวเองชั้นได้เห็นคนที่น่ารักที่สุดในโลกกกกกเลย 💖</h1>
+    <p>การกระทำเปิ่นๆ การพูด ความซุ่มซ่าม ทุกอย่างที่เป็นแก แม้กระทั้งตอนที่แกร้องงอแงตุ๊บป่องๆ มันทำให้ชั้นรู้ว่าควรพูดออกไป </p>
+    <button class="next" id="toQuestion">ต่ออีกนิดนะคะ </button>
+  </div>
+
+  <!-- หน้าที่สาม (คำขอเป็นแฟน) -->
+  <div id="page3" class="hidden">
+    <h1>💘 เป็นแฟนกับเจได้ไหมครับ<br>ชั้นมีความสุขมากๆที่ได้ใช้เวลากับแก 🥺</h1>
     <div class="buttons">
       <button class="yes" id="yesButton">Yes 💗</button>
       <button class="no" id="noButton">No 😢</button>
@@ -72,8 +79,10 @@
 
   <script>
     const nextButton = document.getElementById("nextButton");
+    const toQuestion = document.getElementById("toQuestion");
     const page1 = document.getElementById("page1");
     const page2 = document.getElementById("page2");
+    const page3 = document.getElementById("page3");
     const yesButton = document.getElementById("yesButton");
     const noButton = document.getElementById("noButton");
 
@@ -82,6 +91,11 @@
     nextButton.addEventListener("click", () => {
       page1.classList.add("hidden");
       page2.classList.remove("hidden");
+    });
+
+    toQuestion.addEventListener("click", () => {
+      page2.classList.add("hidden");
+      page3.classList.remove("hidden");
     });
 
     noButton.addEventListener("click", function () {
